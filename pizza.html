@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a server space">
+    <meta name="author" content="Luc Olsthoorn">
+
+    <title>Luc Olsthoorn</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Luc Olsthoorn</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a  href="http://lamp.cse.fau.edu/~lolsthoorn2014/" >Home</a>
+                    </li>
+                     <li>
+                        <a  href="http://lamp.cse.fau.edu/~lolsthoorn2014/p5/index.php" >Storage</a>
+                    </li>
+                    <li>
+                        <a  href="http://lamp.cse.fau.edu/~lolsthoorn2014/photoshop.html">Photoshop</a>
+                    </li>
+                    <li>
+                        <a  href="http://lamp.cse.fau.edu/~lolsthoorn2014/portfolio.html">Resume</a>
+                    </li>
+                    <li>
+                        <a  href="http://lamp.cse.fau.edu/~lolsthoorn2014/p2/p2.html">Olstenhousen</a>
+                    </li>
+                    <li>
+                        <a  href="http://lamp.cse.fau.edu/~lolsthoorn2014/contact.html">Contact</a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+ <header>
+        <div class="container" style="height:100px">
+           
+        </div>
+    </header>
+<img src="img/pizza.jpg" alt="Pizza"  width="100%" style=" position: absolute; z-index: -1;">
+
+<canvas id="canvas" width="400" height="400"
+style="     width: 63%;
+  left: 18%;
+  margin-top: 5%;
+  position: relative;
+}">
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+
+}
+
+function drawFace(ctx, radius ) {
+    var now = new Date();
+   var minute = now.getMinutes(); 
+      var second = now.getSeconds();
+    
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60)-.5*Math.PI);
+    minuter= minute-Math.PI;
+   
+
+        ctx.beginPath();  
+  ctx.arc(0, 0, radius, minute,1.5*Math.PI);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+        ctx.lineTo(0, 0);
+        	ctx.closePath();
+  ctx.fill();
+    
+   
+  
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+ 
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    //hour
+    var hour = ((hour + 11) % 12) + 1;
+    if(hour > 9)
+    {
+        
+    }
+   
+    document.getElementById("hour").innerHTML = hour;
+    //minute
+   
+   
+
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+ <h1>
+            <h1 id="hour" style = "  position: absolute;
+  left: 30%;
+  top: 9%;
+  font-size: 62vw;"></h1>
+        </h1>
+            
+
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+ 
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>       
