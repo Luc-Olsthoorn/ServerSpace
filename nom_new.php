@@ -68,27 +68,12 @@
                         <?php
                         }
                         else{
-                        function CompressURL($url) {
-
-                        $ch = curl_init();
-
-                        curl_setopt($ch, CURLOPT_URL, "http://to.ly/api.php?longurl=".urlencode($url));
-                        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-                        curl_setopt($ch, CURLOPT_HEADER, 0);
-
-                        $shorturl = curl_exec ($ch);
-                        curl_close ($ch);
-
-                        return "penis";
-
-                      }
-
-                      echo CompressURL("http://twitter.com");
                         $code = select($db);
-                        $short = make_bitly_url('http://lamp.cse.fau.edu/~lolsthoorn2014/nom_users.php?k='.$code,'lucols97','2e7746ab49e874caeb1b54994348feb9384bc3c0','json');
-                        echo '<div class="col s12 m6"><h3>URL:</h3><h1>'.$short.'</h1></div>'; 
+                        $short_url = get_bitly_short_url('http://lamp.cse.fau.edu/~lolsthoorn2014/nom_users.php?k='.$code,'lucols97','R_caf88a88160548fa92c81057c6692f96');
+                        //$short = make_bitly_url('http://lamp.cse.fau.edu/~lolsthoorn2014/nom_users.php?k='.$code,'lucols97','2e7746ab49e874caeb1b54994348feb9384bc3c0','json');
+                        echo '<div class="col s12 m6"><h3>URL:</h3><h1>'.$short_url.'</h1></div>'; 
                         echo '<div class="col s12 m6" style="text-align:right;"><h3>Your Code is </h3><h1>'.$code .'</h1></div>';
-                        echo CompressURL("http://twitter.com");
+                     
                       }
                      ?>
                     

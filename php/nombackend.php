@@ -157,28 +157,21 @@ function options($_db){
 }
 
 
-    /* make a URL small */
-function make_bitly_url($url,$login,$appkey,$format = 'xml',$version = '2.0.1')
-{
-    //create the URL
-    $bitly = 'http://api.bit.ly/shorten?version='.$version.'&longUrl='.urlencode($url).'&login='.$login.'&apiKey='.$appkey.'&format='.$format;
-    
-    //get the url
-    //could also use cURL here
-    $response = file_get_contents($bitly);
-    
-    //parse depending on desired format
-    if(strtolower($format) == 'json')
-    {
-        $json = @json_decode($response,true);
-        return $json['results'][$url]['shortUrl'];
-    }
-    else //xml
-    {
-        $xml = simplexml_load_string($response);
-        return 'http://bit.ly/'.$xml->results->nodeKeyVal->hash;
-    }
+function get_bitly_short_url($url,$login,$appkey,$format='txt') {
+    $connectURL = 'http://api.bit.ly/v3/shorten?login='.$login.'&apiKey='.$appkey.'&uri='.urlencode($url).'&format='.$format;
+    return curl_get_result($connectURL);
 }
+function curl_get_result($url) {
+    $ch = curl_init();
+    $timeout = 5;
+    curl_setopt($ch,CURLOPT_URL,$url);
+    curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+    curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,$timeout);
+    $data = curl_exec($ch);
+    curl_close($ch);
+    return $data;
+}
+
 
 
 function getPostcards($_db)

@@ -1,5 +1,6 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="icon " type = "image/x-icon" href="img/icon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Luc Olsthoorn</title>
 
@@ -17,32 +18,15 @@
 </head>
 <body class = "parallax-demo">
      
-<nav style="background-color: rgb(0, 0, 0); z-index: 2;box-shadow: none;">
-        <div class="nav-wrapper">
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/index.html">Home</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/portfolio.html">Resume</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Projects<i class="material-icons right">arrow_drop_down</i></a>
-                    <ul id="dropdown1" class="dropdown-content" style="width: 144px; position: absolute; top: 0px; left: 531.491455078125px; opacity: 1; display: none;">
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/storage.php">Storage</a></li>
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/clockify.html">Clockify</a></li>
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/math.html">Calculator</a></li>
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html">NOM</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul id="slide-out" class="side-nav">
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/index.html">Home</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/portfolio.html">Resume</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/storage.php">Storage</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/clockify.html">Clockify</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/math.html">Calculator</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html">NOM</a></li>
-            </ul>
-            <!--<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>-->
-        </div>
-    </nav>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script> 
+      $(function(){
+        $("#navig").load("nav.html"); 
+         
+      });
+      </script>
+      <div id="navig"></div>
       
 <div class="container" > 
     <h2 class="header">STORAGE</h2> 

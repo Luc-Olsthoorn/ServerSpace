@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>   
+    <link rel="icon " type = "image/x-icon" href="img/icon.png"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>Luc Olsthoorn</title>
@@ -10,46 +11,32 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class = "parallax-demo">    
-    <nav style="background-color: rgba(255, 255, 255, 0); z-index: 2;box-shadow: none;">
-        <div class="nav-wrapper">
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/index.html">Home</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/portfolio.html">Resume</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Projects<i class="material-icons right">arrow_drop_down</i></a>
-                    <ul id="dropdown1" class="dropdown-content" style="width: 144px; position: absolute; top: 0px; left: 531.491455078125px; opacity: 1; display: none;">
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/storage.php">Storage</a></li>
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/clockify.html">Clockify</a></li>
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/math.html">Calculator</a></li>
-                        <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html">NOM</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul id="slide-out" class="side-nav">
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/index.html">Home</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/portfolio.html">Resume</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/storage.php">Storage</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/clockify.html">Clockify</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/math.html">Calculator</a></li>
-                <li><a href="http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html">NOM</a></li>
-            </ul>
-            <!--<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>-->
-        </div>
-    </nav>
-    <div style="position:relative; top:-67px;z-index: -1;">
-        <div class="parallax-container" style=" height: 500px;">
-            <div class="parallax">
-                <img src="img/resume.jpg">
-            </div>
-        </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script> 
+      $(function(){
+        $("#navig").load("nav.html"); 
+         
+      });
+      $(document).ready(function(){
+        $('.parallax').parallax();
+
+      });
+    </script> 
+      </script>
+      <div id="navig"></div>
+   
+        
         <div class="section white">
             <div class="row container">
                 <h2 class="header">RESUME</h2>
             </div>
         </div>
+    <div class="container " >
+       <div class="video-container center" style="height:1000px;">
+            <iframe style="border: 0" width="800" height="1200" frameborder="0" scrolling="no" src="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/pub?embedded=true"></iframe>
+      </div>
     </div>
-       <div>
-            <iframe style="width:100%; height:1000px;" src="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/pub?embedded=true"></iframe>
            <!--<h5>EDUCATION</h5>
            <p>Boca Raton Community High School, Boca Raton, Florida (Graduate, 2015)</p>
            <p>University of Florida, Gainesville, Florida (Graduation, 2019)</p>
@@ -82,7 +69,7 @@
 
 
     <!-- Plugin JavaScript -->
-     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
   <script src="js/bin/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/prism.js"></script>

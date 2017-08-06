@@ -40,10 +40,7 @@
  *
 */
 
- $(document).ready(function(){
-      $('.parallax').parallax();
-     $(".button-collapse").sideNav();
-    });
+
 
 // t: current time, b: begInnIng value, c: change In value, d: duration
 jQuery.easing['jswing'] = jQuery.easing['swing'];
