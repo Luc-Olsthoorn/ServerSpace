@@ -20,6 +20,16 @@ function initalize()
   $('#scenery').css("left", -(xpos-100));
   $('#airplane').css("transform", "scaleX(-1) rotate("+pitch*9+"deg) ");
   $('#airplane').css("bottom", ypos);
+  $('#mobileControlLeft').click(function(){
+    down = false;
+    up = true; 
+    setTimeout(function(){up =false}, 100);
+  });
+  $('#mobileControlRight').click(function(){
+      up = false;
+      down = true;
+      setTimeout(function(){down =false}, 100);
+  });
 }
 function game(){
     moveScenery();
@@ -71,16 +81,7 @@ $(document).keyup(function(e){
 });
 //---------Mobile controls ---------//
 
-$('#mobileControlLeft').click(function(){
-    down = false;
-    up = true; 
-    setTimeout(function(){up =false}, 100);
-});
-$('#mobileControlRight').click(function(){
-    up = false;
-    down = true;
-    setTimeout(function(){down =false}, 100);
-});
+
 
 function airPlane(){
   hitGround();
@@ -131,14 +132,6 @@ function hitMountain()
 { 
   for(var i =0; i < mountains.length; i++)
   {
-    //console.log("is" + (xpos + airplaneLength) + ">" + (mountains[i].size+mountains[i].distance-ypos/2));
-    //console.log("is" + ypos +"<"+ (mountains[i].size*.9));
-    //console.log("-----------------------------------------------");
-    //console.log("is " + xpos + " < "+(mountains[0].size + mountains[0].distance - ypos/2));
-    //console.log("size: " + mountains[0].size);
-    //console.log("ypos/2: " + ypos/2);
-    //console.log("distance: "+ mountains[0].distance);
-    //if(mountains[i].distance - airplaneLength < xpos && xpos < mountains[i].distance+mountains[i].size- airplaneLength && ypos < mountains[i].size)
     if((xpos + airplaneLength) > (ypos/2+mountains[i].distance) && ypos < (mountains[i].size*.8) && xpos+airplaneLength < ( mountains[i].size + mountains[i].distance - ypos/2))
     {
       endGame(mountains[i].id);

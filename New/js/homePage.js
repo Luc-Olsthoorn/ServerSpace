@@ -20,7 +20,9 @@ $(document).ready(function()
 		$('#introPage').transition({duration   : '1s'});
 		$('#mainPage').transition({duration   : '1s'});
 		$('#game').transition({duration   : '1s'});	
-		$('#bottomLinks').transition({duration   : '1s'});	
+		$('#bottomLinks').transition({duration   : '1s'});
+		$('#projectList').transition({duration   : '1s'});
+		$('#projectSection').transition({duration   : '1s'});
 		if($( window ).width() < 600)
 		{
 			$('#mobileControlRight').transition({duration   : '1s'});
@@ -29,10 +31,8 @@ $(document).ready(function()
 	},1000);
 });
 var mountains = [];
-function createGame(){
-	
+function createGame(divToBindTo){
 	//create Game
-	
 	var total = 0;
 	var distance = 500;
 	var text="";
@@ -180,5 +180,10 @@ function setupModal()
 		initalize();
 	});
 	$('.modal').modal('setting', 'closable', false);
+}
+function setupProjects(){
+	$('.ui.sticky').sticky({
+    context: '#projectSection'
+  });
 }
 
