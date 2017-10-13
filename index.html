@@ -1,210 +1,82 @@
-<!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en">
 <head>
-    
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <link rel="icon " type = "image/x-icon" href="img/icon.png"/>
-    
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  </head>
-<body style="height:100%;">
-      <script src="js/jquery.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link rel="icon " type = "image/x-icon" href="img/icon.png"/>
+    <!-- CSS  -->
+    <link href="css/fonts.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/homePage.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/semantic.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
 
-<script> 
-      $(function(){
-        $("#navig").load("nav.html"); 
-         
-      });
-       $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-    $('ul.tabs').tabs();
-    $('.parallax').parallax();
 
-  });
-     
-      </script>
-      
-    <div style="height:100%;  background-image: url('img/lucCitybw.jpg');">
-    <div style="top:25%; position:relative;">
-      <h1 class="header white-text thin " style="text-align:center;   margin:0px;">LUC OLSTHOORN</h1>
-      <p class="grey-text lighten-3" style="text-align:center;">web developer//coder//musician</p>
-    </div>
-      <div class="   center"style="position:relative;top:40%;">
-        
-     <a href="#projects"><img src="img/downarrow.png"   width="100" /></a>
-      
-    </div>
-    </div>
-      
-<style>
-.heights{
-  height:400px;
-}
-@media (max-width: 600px) {
-  .heights {
-    height:auto !important;
-  }
-}
-</style>
-    
-    
+</head>
+<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
 
-  <div class="container">
-    <div class="row">
-      <div class ="col l12 center">
-        <h2 class="header thin">Websites I have built</h2>
-      </div>
-    </div>
-     <div id="projects" class="section scrollspy" style="position:relative; top:75px;"></div>
-      <div class="row">
-         
-          <!--
-            <div class="col s12">
-              <ul class="tabs hide-on-small-only">
-                <li class="tab col s3"><a href="#a1"class="thin">UFACM</a></li>
-                <li class="tab col s3"><a href="#a2" class="thin">EWEEK2016</a></li>
-                <li class="tab col s3"><a href="#a3" class="thin">GatorMotorWorks</a></li>
-                <li class="tab col s3"><a href="#a4" class="thin">Amoro</a></li>
-              </ul>
-               <ul class="tabs hide-on-med-and-up">
-                <li class="tab col s3"><a href="#a1"class="thin">UFACM</a></li>
-                <li class="tab col s3"><a href="#a2" class="thin">EWEEK</a></li>
-                <li class="tab col s3"><a href="#a3" class="thin">GMW</a></li>
-                <li class="tab col s3"><a href="#a4" class="thin">Amoro</a></li>
-              </ul>
-            </div>-->
-        <div id="a1" class=" heights col m3 s12 center">
-          <h4 class="thin">UFACM</h4>
-          <a href="http://acm.cise.ufl.edu/"><img class="circle responsive-img"src="img/ufacm.png" alt="img04"/></a>
-          <p>Built the website using a custom google sheets CMS</p>
-          <a href="http://acm.cise.ufl.edu/">UFACM</a>
-        </div>
-         <div  id="a2"class="heights col m3 s12 center">
-          <h4 class="thin">EWEEK2016</h4>
-          <a href="http://ufbec.org/eweek2016/"><img class="circle responsive-img"src="img/Eweek.png" alt="img04"/></a>
-          <p>Designed the frontend for the 2016 EWeek for UF</p>
-          <a href="http://ufbec.org/eweek2016/">Eweek</a>
-        </div>
-      <div id="a3" class="heights col m3 s12  center">
-          <h4 class="thin"> GatorMotorWorks</h4>
-          <a href="http://gatormotorworks.com"><img class="circle responsive-img"src="img/GatorMotorWorks.png" alt="img04"/></a>
-          <p>Built a php mysql site for a startup in gainesville selling custom parts </p>
-          <a href="http://gatormotorworks.com">Buy Custom parts</a>
-        </div>
-      <div  id="a4"class="heights col m3 s12  center">
-          <h4 class="thin">Amoro.com</h4>
-          <a href="http://www.amoro.com"><img class="circle responsive-img"src="img/amoro.jpg" alt="img04"/></a>
-          <p>A website I do web work for, as well as creating and maintaing the mobile/html5 design of the website</p>
-           <a href="http://www.amoro.com">buy jewelery</a>
-        </div>
-   
-      
-   
-      
-    
-    </div>
-  </div>
-  <div class="parallax-container" style=" height: 200px;">
-            <div class="parallax">
-                <img src="img/nom1.jpg">
-            </div>
-        </div>
+<head>
+  <body>
+<!---introPage-->
+<div id="intro"></div>
+<!---MainPage-->
 
-    <div class="container">
-    <div class="row">
-      <div class ="col l12 center">
-        <h2 class="header thin">PROJECTS</h2>
-      </div>
-    </div>
-     <div id="projects" class="section scrollspy" style="position:relative; top:200px;"></div>
-      <div class="row">
-         <div class="row"><!--
-            <div class="col s12">
-              <ul class="tabs hide-on-small-only teal-text">
-                <li class="tab col s3"><a href="#test1"class="thin">Scribbl</a></li>
-                <li class="tab col s3"><a href="#test2" class="thin">NOM</a></li>
-                <li class="tab col s3"><a href="#test3" class="thin">Calculator</a></li>
-                <li class="tab col s3"><a href="#test4" class="thin">Storage</a></li>
-                <li class="tab col s3"><a href="#test5" class="thin">Clockify</a></li>
-                <li class="tab col s3"><a href="#test6" class="thin">Google Sheets CMS</a></li>
-              </ul>
-              <ul class="tabs hide-on-med-and-up">
-                <li class="tab col s3"><a href="#test1"class="thin">S</a></li>
-                <li class="tab col s3"><a href="#test2" class="thin">N</a></li>
-                <li class="tab col s3"><a href="#test3" class="thin">C</a></li>
-                <li class="tab col s3"><a href="#test4" class="thin">S</a></li>
-                <li class="tab col s3"><a href="#test5" class="thin">C</a></li>
-                <li class="tab col s3"><a href="#test6" class="thin">G</a></li>
-              </ul>
-            </div>-->
-        <div id="test1" class="heights col m2 s12 center">
-          <h4 class="thin">Scribbl</h4>
-          <img class="circle responsive-img"src="img/scribbl.jpg" alt="img04"/>
-          <p>a social drawing app built in angularjs NodeJS and Mongo DB</p>
-          <a href="https://github.com/scribblapp/Scribbl">Draw</a>
-        </div>
-         <div  id="test2"class="heights col m2 s12  center">
-          <h4 class="thin">NOM</h4>
-          <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html"><img class="circle responsive-img"src="img/nom.jpg" alt="img04"/></a>
-          <p>PHP based webapp that feeds your gathering</p>
-          <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html">Feed the people</a>
-        </div>
-      
-      <div  id="test3"class="heights col m2 s12  center">
-          <h4 class="thin">Calculator</h4>
-         <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/math.html"><img class="circle responsive-img"src="img/calculator.jpg" alt="img04"/></a>
-           <p>an intresting mathematical pattern coded to do division without using the division symbol</p>
-           <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/math.html">calculate</a>
-        </div>
-   
-      <div id="test4" class="heights col m2 s12  center">
-          <h4 class="thin">Storage</h4>
-          <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/storage.php"><img class="circle responsive-img"src="img/storage.jpg" alt="img04"/></a>
-           <p>Simple place to publically store files under 2mb</p>
-          <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/storage.php">store your stuff</a>
-        </div>
-   
-      <div id="test5"class="heights col m2 s12 center">
-          <h4 class="thin">Clockify</h4>
-          <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/clockify.html"><img class="circle responsive-img"src="img/pizza.jpg" alt="img04"/></a>
-           <p>a simple javascript clock that you can change the picture of the face</p>
-          <a href="http://lamp.cse.fau.edu/~lolsthoorn2014/clockify.html">watch time fly by</a>
-        </div>
-      </div>
-       
-    </div>
-      <div class="parallax-container" style=" height: 200px;">
-            <div class="parallax">
-                <img src="img/nom1.jpg">
-            </div>
-        </div>
-    <div class="container">
-      <div class="row">
-      <div class ="col l12 center">
-        <h2 class="header thin">Resume</h2>
-      </div>
-    </div>
-  </div>
-  <div class="center">
-    <div class="container">
-  <a class="waves-effect waves-light btn"href="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/export?format=pdf">Download PDF</a>
+<div id="mainPage" >
+  <ul id="scene" class="scene">
+    <li class="layer" data-depth="0.20">
+      <div id="backgroundImageMe" ></div>
+    </li>
+
+    <li class="layer" data-depth="0.60" style="width:100%;">
+     <h1 class="header inverted thin " style="text-align:center; color:white; top:10%; width:100%;font-size:10vw; margin:0px;">LUC OLSTHOORN</h1> 
+    </li>
+  </ul>
 </div>
-</div>
-    <div class="container hide-on-small-only" >
-       <div class="video-container center" style="height:1000px;">
-            <iframe style="border: 0" width="800" height="1200" frameborder="0" scrolling="no" src="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/pub?embedded=true"></iframe>
-      </div>
-    </div>
-    </div>
+
+</div> 
+<!--<div id="bottomLinks">
+  <div class="ui container very padded" style="text-align:center; bottom:0px;" >
+      <h1 style=" text-align:center; "class="thin"></h1>
+      <div class="ui divider "></div>
+      <p style="color:white; font-style: italic; ">Hi, I am Luc Olsthoorn, and I am majoring in Computer Science at the University of Florida. I like to build websites, make music, and play Ultimate Frisbee. </p>
       
+    <div class="ui divider "></div>
+    <h1 style=" text-align:center; "class="thin"></h1>
+</div>
+</div>-->
+<!---Game-->
+<div id="game"></div>
+<div class="ui divider"></div>
+<div id="pageSection"></div>
 
 
-  <!--  Scripts-->
-  <script src="js/bin/materialize.js"></script>
+<div id ="footer" class="container basic segment ui">
+  <h5 class="ui  header center aligned">Made with<a class="ui red circular label">Love</a> by  <a href="http://www.lucolsthoorn.com">Luc Olsthoorn</a></h5>
+  <div class="ui divider "></div>
+  <a href="https://soundcloud.com/olstenhousen">
+        <i class="ui  white soundcloud icon big"  id="soundCloudLink" ></i>
+    </a>
+    <a href="https://github.com/Luc-Olsthoorn">
+        <i  id="githubLink" class="ui  white github icon big"></i>
+    </a>
+    <a  href="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/export?format=pdf" >
+        <i  id="resumeLink" class="ui  white file text outline icon big"></i>
+    </a>
+    <a  href="https://www.linkedin.com/in/luc-olsthoorn-815074106">
+        <i  id="linkedinLink"class="ui  white linkedin icon big"></i>
+    </a>
+    <a href="mailto:me@lucolsthoorn.com?Subject=I%20want%20to%20hire%20you">
+        <i id="mailLink" class="ui  white mail outline icon big"></i>
+    </a>  
+</div>
 
 
-  </body>
+<!--JS -->
+<script src="js/newGame.js"></script>
+<script src="js/semantic.js"></script>
+<script src="js/homePage.js"></script>
+<script src="js/parallax.js"></script>
+<script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  </script>
+</body>
 </html>
