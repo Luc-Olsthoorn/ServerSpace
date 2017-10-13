@@ -3,31 +3,46 @@ body{
 	background-color:black;  
 	font-family:roboto !important;
 }
-#introPage{
-	display:none;
-}
 #mainPage{
-	display:none; 
+	display: none;
 	height:100%;
+	background-color: black;
 }
 #bottomLinks{
-	display:none;
+	display: none;
 	background-color: rgba(0, 0, 0, 0.619608);
+}
+#footer{
+	display: none;
+}
+#pageSection{
+	display: none;
 }
 #backgroundImage{
 	height:100%;  
-	background-image: url('../img/lucCitybw.jpg'); 
+	background-image: url('../img/justthebackground.png'); 
     background-attachment: fixed;
     background-position: center;
     background-size: auto 100%;
+	position absolute;
+}
+#backgroundImageMe{
+	height:100%;  
+	background-image: url('../img/justme.png'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto 100%;
+    position absolute;
 }
 /*-----------GAME--------------*/
 #game{
-	display:none; 
+	display: none;
 	overflow: hidden; 
 	position: relative;  
 	width: 100%; 
-	height: 50%;
+	height: 95%;
+	background-color:white;  
+	z-index:4;
 }
 #airplane{
 	height:60px; 
@@ -35,9 +50,7 @@ body{
 	transform: scaleX(-1) rotate(0deg);
 	filter: FlipH;
 	position: absolute; 
-	bottom:200px; 
-	left:100px; 
-	transition:transform .002s; 
+
 	z-index:1;
 }
 #scenery{
@@ -85,7 +98,7 @@ body{
 	color:green !important;
 }
 #githubLink:hover{
-	color:white !important;
+	color:black !important;
 }
 #linkedinLink:hover{
 	color:blue !important;

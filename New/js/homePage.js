@@ -1,189 +1,221 @@
 var projects = [
-				{"name":"Auto-Email","description":"Built an Angularjs based web app to auto generate, visualize, and edit the weekly email. Used the FB api to pull the json asynchronously among multiple groups of upcoming events","link":"http://lamp.cse.fau.edu/~lolsthoorn2014/auto_Email/", "img":"img/autoEmail.png", "importance":"5"},	
-				{"name":"TigerZone","description":"Developed a Java applet to connect to a Server, and play a board game using a simple AI. Was on an Agile Team of 5, initiated version control and unit testing","link":"https://github.com/aznxed/TigerZone_Remastered", "img":"img/tigerZone.jpg", "importance":"4"},	
-				{"name":"Auto-Calendar","description":"Built a MEAN stack web app, using Google calendar API to display a person's schedule","link":"https://github.com/Luc-Olsthoorn/auto-calendar", "img":"img/calendar.png", "importance":"3"},					
-				{"name":"Amoro","description":"A website I do web work for, as well as creating and maintaing the mobile/html5 design of the website","link":"http://www.amoro.com", "img":"img/amoro.jpg", "importance":"1"},
-				{"name":"Sandia National Labs Intern","description":"Wrote a modular geographical data web framework using SpringMVC, Requirejs, JQuery, Bootstrap. Developed an algorithm based on graphs for automatically adjusting components to fit on differing screen sizes using jQuery, and JavaScript. Developed a UI for adding, deleting, moving and resizing components using JQuery and JQuery-ui, worked on an agile team of four","link":"http://wwww.Sandia.gov", "img":"img/sandia.png", "importance":"6"},
-				{"name":"UFACM","description":"Built the website using a custom google sheets CMS","link":"http://ufacm.xyz", "img":"img/ufacm.png", "importance":"5"},
-				{"name":"EWEEK2016","description":"Designed the frontend for the 2016 EWeek for UF","link":"http://ufbec.org/eweek2016/", "img":"img/Eweek.png", "importance":"3"},
-				{"name":"GatorMotorWorks","description":"Built a php mysql site for a startup in gainesville selling custom parts","link":"http://gatormotorworks.com", "img":"img/GatorMotorWorks.png", "importance":"2"},
-				{"name":"Scribbl","description":"a social drawing app built in angularjs NodeJS and Mongo DB","link":"https://github.com/scribblapp/Scribbl", "img":"img/scribbl.jpg", "importance":"1"},
-				{"name":"NOM","description":"PHP based webapp that feeds your gathering","link":"http://lamp.cse.fau.edu/~lolsthoorn2014/nom.html", "img":"img/nom.jpg", "importance":"1"}
+				{"name":"DataHub","googleDocURL":"https://docs.google.com/document/d/1kNGKrbwFrCANBu_oDjKUoaBlnUY75c-cFjEGSuCq950/pub?embedded=true", "importance":"5", "height":"600"},	
+				{"name":"Auto-Email","googleDocURL":"https://docs.google.com/document/d/1YdpPPdBFeJNIP1fWZFcxhnntoK-1wXs2QejlCGs2dVk/pub?embedded=true", "importance":"5", "height":"400"},	
+				{"name":"TigerZone","googleDocURL":"https://docs.google.com/document/d/1t3RP6gxz_0c8DRpCYOw7T1a-HE30bvb1kK0mjKwcSwc/pub?embedded=true", "importance":"4", "height":"400"},	
+				{"name":"Auto-Calendar", "googleDocURL":"https://docs.google.com/document/d/1VBz2G5E0zM8Ot_32PRQBzSsfuSt3yomRipAgRP9jNW4/pub?embedded=true", "importance":"3", "height":"400"},							
+				{"name":"UFACM","googleDocURL":"https://docs.google.com/document/d/1FYKEMG9mkMujYSkCJ4JSwmlqsZpqm5VDO-eGhfkVxIU/pub?embedded=true", "importance":"5", "height":"400"},
+				{"name":"EWEEK2016","googleDocURL":"https://docs.google.com/document/d/e/2PACX-1vQ8ZSQ7nWWiANX2Lda-7ZSZ5fOrIgZT7gGgf8kpn632hxWC_OJPvKv76kGdqczlfqYsCao0o0geU85F/pub?embedded=true", "importance":"3", "height":"400"},
+				{"name":"Scribbl","googleDocURL":"https://docs.google.com/document/d/1V7SlU8FRpmXMQ31taKdur3dxgzb-Z6rNUoMsVvXoUqk/pub?embedded=true", "importance":"1", "height":"400"},
+				{"name":"NOM","googleDocURL":"https://docs.google.com/document/d/12AxHBhlSRTtx2EXgNdJHkkngU4lOEG0ZISCIN8TV3UY/pub?embedded=true", "importance":"1", "height":"400"}
 				];
+var work =[{"name":"Sandia National Labs Intern Pt.1","googleDocURL":"https://docs.google.com/document/d/1AmiNO6RKw2L-NiHGy3sWVxJZ6SSdo6Pe8c09IACRnHg/pub?embedded=true",  "importance":"6", "height":"1000"},
+	{"name":"Sandia National Labs Intern Pt.2","googleDocURL":"https://docs.google.com/document/d/1UEdJmhbTAB3v_mrLBvYTpVVJEnzFejeesEV3BRG9sAY/pub?embedded=true", "importance":"6" , "height":"1400"},
+	{"name":"GatorMotorWorks", "googleDocURL":"https://docs.google.com/document/d/1DcnWJFeq2Rrg0-f67oiE_ubNVfXX61_HtTab7htYk20/pub?embedded=true","importance":"2", "height":"800"},
+	{"name":"Amoro", "googleDocURL":"https://docs.google.com/document/d/1zXYFTCVdJzsbf3mRTdsm9Wu5Muvq_VNamjCotYg6MzA/pub?embedded=true", "importance":"2", "height":"400"}
+];
+var about = [{"name":"General", "googleDocURL":"https://docs.google.com/document/d/1mn7kBDPJpJm26uldQtUCcOUoECd8duho_bAnVzYw4Ws/pub?embedded=true", "importance":"2", "height":"400"},
+	{"name":"DJ/Producing", "googleDocURL":"https://docs.google.com/document/d/18WSxuHYHi7uda0sdo9uKSayMBTmh6vb2c9oCIQg3I0k/pub?embedded=true", "importance":"2", "height":"400"}];
+var resume = [{"name":"View", "googleDocURL":"https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/pub?embedded=true", "importance":"2", "height":"1400"}];
 //var isTouchDevice = 'ontouchstart' in document.documentElement;
 $(document).ready(function()
 {
-	$('#introPage').transition({duration   : '0s'});
-	loadAll();
-	setTimeout(function()
-	{
-		$('#introPage').transition({duration   : '1s'});
-		$('#mainPage').transition({duration   : '1s'});
-		$('#game').transition({duration   : '1s'});	
-		$('#bottomLinks').transition({duration   : '1s'});
-		$('#projectList').transition({duration   : '1s'});
-		$('#projectSection').transition({duration   : '1s'});
-		if($( window ).width() < 600)
-		{
-			$('#mobileControlRight').transition({duration   : '1s'});
-			$('#mobileControlLeft').transition({duration   : '1s'});
-		}
-	},1000);
-});
-var mountains = [];
-function createGame(divToBindTo){
-	//create Game
-	var total = 0;
-	var distance = 500;
-	var text="";
-	var size;
-	for(var i = 0; i < projects.length; i++)
-	{
-		var temp ={};
-		size = projects[i].importance*50 + 100;
-		text += '<img src="img/mountains.png" style=" z-index:2;height:'+ size +'px; width:'+ size +'px;  position:absolute; left:'+ distance + 'px; bottom:0px;" >';
-		text += '<div style="z-index:3;position:absolute; left:'+ distance + 'px; bottom:0px; width: '+size+'px; text-align:center;"><h3 style="color:white;">'+ projects[i].name+' </h3></div>';
-		temp.id = i;
-		temp.size = size;
-		temp.distance = distance+20;
-		mountains.push(temp);
 
-		distance += size+Math.random()*500;
-	}
-	total = distance + size;
-	$('#scenery').append(text);
-	$('#trashCan').css("left", (total+100));
-	$('#gameResume').css("left", (total+100));
-	resumeDistance = total+100;
-}
-function createProjectPage()
-{
-	for(var i =0; i < projects.length; i++)
-	{
-		var	text = '<img id ="projectList' + i +'" src="'+projects[i].img+'" class="ui wireframe image "  >';
-		$('#normalProjects').append(text);
-		$('#projectList' + i).click({ value: i },function(event){
-			$('.modal').modal('hide');
-			$('#project' + event.data.value).modal('show');
-			console.log("project"+ event.data.value);
+	website = new Website(projects);
+});
+
+class MenuItem {
+	constructor(subMenuHeader, name, execute){
+		var item = $(`<a class="item">${name}</a>`);
+		subMenuHeader.append(item); 
+		item.on('click', function(){
+			execute();
 		});
 	}
-	$('.sequenced.images .image').visibility({
-	    type       : 'image',
-	    transition : 'fade in',
-	    duration   : 1000
- 	});
 }
-function runGame()
-{
-	game();
-	//runs game
-}
-function endGame(result)
-{
-	//$('#gameIntro').css("display","none");
-	if(result == "win")
-	{
-		$('#win').transition({duration   : '1s'});
-	}
-	else if(result == "lost")
-	{
-		$('#lost').modal('show');
-	}
-	else if(result == "resume")
-	{
-		$('#resume').modal('show');
-	}
-	else
-	{
-		$('#project' + result).modal('show');
-	}
-}
-function loadAll(){
-	$('#loading').progress({total: 5});
-	$('#loading').progress('increment');
-	loadProjects();
-	$('#loading').progress('increment');
-	createGame();
-	$('#loading').progress('increment');
-	createProjectPage();
-	$('#loading').progress('increment');
-	setupModal();
-	$('#loading').progress('increment');
 
-	$('#mainPage').visibility({
-	    once       : false,
-	    continuous : true,
-	    onPassing  : function(calculations) {
-	    	var transperacy = 1 - calculations.percentagePassed;
-	      	var newColor = 'rgba(0, 0, 0, ' + transperacy +')';
-	      	$('body').css('background-color', newColor);
-	      	console.log(newColor);
-	    }
-	  });
-
-}
-function loadProjects()
-{
-	var text = "";
-	for(var i =0; i<projects.length; i++)
+class Page{
+	constructor(googleDocURL){
+		this.iframeSize=0;
+		this.height = 0;
+		this.inputHeight=0;
+		var self=this;
+		this.html=$(`<iframe style="border: 0" width="100" frameborder="0" scrolling="no" src="${googleDocURL}"></iframe>`);
+		this.loading=$(`<div class="ui active loader"></div>`);
+	}
+	setHtml(divToBindTo){
+		var width = $( "#projectAttatchment" ).width();
+		console.log(width);
+		this.height = 660*this.inputHeight/width;
+		var self =this;
+		this.html.css("display","none");
+		$("#" + divToBindTo).html(this.html);
+		$("#" + divToBindTo).addClass(" active inverted ");
+		$("#" + divToBindTo).append(this.loading);
+		$("#" + divToBindTo).css("background-color","white")
+		$("#" + divToBindTo).css("height", this.height);
+		self.html.on('load',function(){
+			console.log("in");
+			self.loading.remove();
+			self.html.css("display","inherit");
+			$("#" + divToBindTo).html(this.html);
+			$("#" + divToBindTo).removeClass(" active ");
+		});
+	}
+	setHeight(inputHeight){
+		this.inputHeight = inputHeight;
+	}
+	addMenuItem(subMenuHeader, name, execute)
 	{
-		text = "";
-		text += '<div id="project'+i+'" style="display:none;" class="ui basic modal">';
-		text += '<div class="ui container very padded text">';
-		text +=  '<div class="ui horizontal divider inverted">';
-		text += '<h1 class="inverted">';
-		text += projects[i].name;
-		text += '</h1>';
-		text += '</div>';
-		text += '<div class="ui grid">';
-		text += '<div class="eight wide column">';
-		text += '<img class="ui medium circular image" src="'
-		text += projects[i].img;
-		text += '">';
-		text += '</div>';
-		text += '<div class="eight wide column">';
-		text += '<h3 style="color:white; font-style: italic;font-weight: normal;">"';
-		text += projects[i].description;
-		text += '"</h3>';
-		text += '<a href = " ';
-		text += projects[i].link;
-		text += '"><button class="ui inverted button">Website</button></a>';
-		text += '</div></div>';
-		text +=  '<div class="ui inverted divider"></div>';
-		text += '<div class="actions">';
-        text +=  '<div class="ui red basic inverted button projects">View Projects Normally</div>';
-        text +=  '<div class="ui green basic game inverted button">Play again</div>';
-        text+= '</div>';
-		text += '</div></div>';
-		$('body').append(text);
+		this.menuItem = new MenuItem(subMenuHeader, name, execute);
+	}
+	getSize(){
+		return this.size;
 	}
 }
-function setupModal()
-{
-	$('#playBtn').click(function(){
-		initalize();
-		runGame();
-	});
 
-	$('.game').click(function(){
-		initalize();
-		$('.modal').modal('hide');
-	});
-	$('.projects').click(function(){
-		$('.modal').modal('hide');
-		$('#projects').modal('show');
+class PageSection{
+	constructor(divToBindTo)
+	{
+		this.pageArray=[];
+		this.divToBindTo = divToBindTo;
+		this.menuID = "menuBar";
+		this.contentID = "projectAttatchment";
+		$("#"+ this.divToBindTo).append(`
+		<div class="ui container">
+			<div class="ui stackable grid">
+  				<div class="four wide column" >
+   					<div class="ui vertical fluid tabular menu" id="${this.menuID}"></div>
+				</div>
+				<div class="twelve wide stretched column">
+    				<div class="ui container">
+      					<div class="ui embed container center" id="${this.contentID}" style="height:100%; overfow:auto;"  >
+						</div>
+					</div>
+				</div>
+  			</div>
+  		</div>`);
+		
+	}
+	addPage(subMenuHeader, item, onClickCall){
+		var page = new Page(item.googleDocURL);
+		page.setHeight(item.height); 
+		page.addMenuItem(subMenuHeader, item.name, onClickCall);
+		this.pageArray.push(page);
+	}
+	addPageHeader(name){
+		var menuHeader = $(`<div class="ui vertical fluid tabular menu" >
+   								<div class="header">${name}</div>
+							</div>`);
+		var subMenuHeader = $(`<div class="menu" ></div>`);
+		menuHeader.append(subMenuHeader);
+		$("#" + this.menuID).append(menuHeader);
+		return subMenuHeader;
+	}
+	switchPage(index){
+		console.log("called");
+		this.pageArray[index].setHtml(this.contentID);
+		
+	}
+	getIndex(){
+		return this.pageArray.length;
+	}
+}
+class Website {
+	constructor(projects){
+		this.gameDiv = "game";
+		this.footer = "footer";
+		this.mainPageDiv = "mainPage";
+		this.bottomLinksDiv = "bottomLinks"
+		this.pageSectionDiv = "pageSection";
+		this.loadingScreenDiv = "intro";
+		this.mobile=false;
+		if ($( window ).width() < 960) {
+    		this.mobile=true;
+		}
+		this.loadingScreen =  new LoadingScreen(this.loadingScreenDiv);
+		this.loadingScreen.addToIncrement(3);
+		
+		this.pageSection = new PageSection(this.pageSectionDiv);
+		this.loadingScreen.increment();
 
-	});
-	$('.back').click(function(){
-		$('.modal').modal('hide');
-		initalize();
-	});
-	$('.modal').modal('setting', 'closable', false);
+		this.game = new Game(this.gameDiv, this.mobile);		
+		this.game.render();
+		this.loadingScreen.increment();
+
+		//add projects
+
+		this.addNewSubsection("Projects", projects, true);
+		this.addNewSubsection("Work", work, true);
+		this.addNewSubsection("About", about, false);
+		this.addNewSubsection("Resume", resume, false);
+		//default to about me
+		this.pageSection.switchPage(12);
+		//show the divs
+		this.loadingScreen.increment();
+		this.loadingScreen.hide();
+		$('#' + this.gameDiv).transition({duration   : '3s'});
+		$('#' + this.mainPageDiv).transition({duration   : '3s'});
+		$('#' + this.footer).transition({duration   : '3s'});
+		$('#' + this.bottomLinksDiv).transition({duration   : '3s'});
+		$('#' + this.pageSectionDiv).transition({duration   : '3s'});
+	}
+	addNewSubsection(name, items, game){
+		var self = this;
+		var projectMenuHeader = this.pageSection.addPageHeader(name);
+		for(var i=0; i<items.length;i++){
+			var index = this.pageSection.getIndex();
+			function switchItem(temp){ return function (){
+				$("html, body").animate({
+					scrollTop: $(document).height()*3/5
+				}, 1000, 'swing');
+				self.pageSection.switchPage(temp);
+			}};
+			var temporaryFunction = switchItem(index);
+
+			if(game){
+				this.game.addProject(items[i], temporaryFunction);
+			}
+			this.pageSection.addPage(projectMenuHeader, items[i], temporaryFunction);
+		}
+	}
 }
-function setupProjects(){
-	$('.ui.sticky').sticky({
-    context: '#projectSection'
-  });
+class LoadingScreen{
+	constructor(divToBindTo){
+		this.divToBindTo = divToBindTo;
+		this.incrementer = 0;
+		this.incrementTotalAmount = 0;
+		this.loadingBar = $(`<div class="ui tiny progress" id="loading">
+	  			<div class="bar ">
+	    			<div class="progress"></div>
+				</div>
+    		</div>`);
+		this.wrapper= $(`
+      	<div style="top:35%; position:absolute; width:100%">
+			<h1 class="header inverted thin " style="text-align:center; color:white;  margin:0px;">LUC OLSTHOORN</h1>
+			<p class=" grey-text lighten-3" style="color:white;text-align:center;">web developer//coder//musician</p>
+			
+		</div>`);
+		this.wrapper.append(this.loadingBar);
+		$("#"+this.divToBindTo).append(this.wrapper);
+	}
+	increment(){
+		this.loadingBar.progress('increment');
+		this.incrementer++;
+		if(this.incrementTotalAmount == this.incrementer){
+			
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	addToIncrement(amount){
+		this.incrementTotalAmount += amount;
+		this.loadingBar.progress({total: this.incrementTotalAmount});
+	}
+	hide(){
+		$('#' + this.divToBindTo).transition({duration   : '3s'});
+	}
 }
+
 

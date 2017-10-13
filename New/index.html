@@ -15,128 +15,68 @@
 
 <head>
   <body>
-    <!---introPage-->
-    <div id="introPage">
-      <div style="top:35%; position:absolute; width:100%">
-        <h1 class="header inverted thin " style="text-align:center; color:white;  margin:0px;">LUC OLSTHOORN</h1>
-        <p class=" grey-text lighten-3" style="color:white;text-align:center;">web developer//coder//musician</p>
-        <div class="ui tiny progress" id="loading">
-          <div class="bar ">
-            <div class="progress"></div>
-        </div>
-    </div>
-</div>
-</div>
+<!---introPage-->
+<div id="intro"></div>
 <!---MainPage-->
+
 <div id="mainPage" >
-  <div id="backgroundImage">
-    <h1 class="header inverted thin " style="text-align:center; color:white;  font-size:10vw; margin:0px;">LUC OLSTHOORN</h1>   
+  <ul id="scene" class="scene">
+    <li class="layer" data-depth="0.20">
+      <div id="backgroundImageMe" ></div>
+    </li>
+
+    <li class="layer" data-depth="0.60" style="width:100%;">
+     <h1 class="header inverted thin " style="text-align:center; color:white; top:10%; width:100%;font-size:10vw; margin:0px;">LUC OLSTHOORN</h1> 
+    </li>
+  </ul>
 </div>
+
 </div> 
-<div id="bottomLinks">
+<!--<div id="bottomLinks">
   <div class="ui container very padded" style="text-align:center; bottom:0px;" >
       <h1 style=" text-align:center; "class="thin"></h1>
       <div class="ui divider "></div>
       <p style="color:white; font-style: italic; ">Hi, I am Luc Olsthoorn, and I am majoring in Computer Science at the University of Florida. I like to build websites, make music, and play Ultimate Frisbee. </p>
-      <a href="https://soundcloud.com/olstenhousen">
-        <i class="ui inverted white soundcloud icon big"  id="soundCloudLink" ></i>
-    </a>
-    <a href="https://github.com/Luc-Olsthoorn">
-        <i  id="githubLink" class="ui inverted white github icon big"></i>
-    </a>
-    <a  href="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/export?format=pdf" >
-        <i  id="resumeLink" class="ui inverted white file text outline icon big"></i>
-    </a>
-    <a  href="https://www.linkedin.com/in/luc-olsthoorn-815074106">
-        <i  id="linkedinLink"class="ui inverted white linkedin icon big"></i>
-    </a>
-    <a href="mailto:me@lucolsthoorn.com?Subject=I%20want%20to%20hire%20you">
-        <i id="mailLink" class="ui inverted white mail outline icon big"></i>
-    </a>  
+      
     <div class="ui divider "></div>
     <h1 style=" text-align:center; "class="thin"></h1>
 </div>
-</div>
+</div>-->
 <!---Game-->
-<div id="game">
-  <img id ="airplane" src="img/airplane.png">
-  <div id ="scenery">
-    <div id ="gameIntro" class="ui segment raised">
-      <p> Welcome to Airplane project game. Use your left and right arrows to change pitch (bottom left and right screen on mobile). If you crash into a mountain it will take you to one of my projects. Enjoy!</p>
-      <a id ="playBtn" class="  ui thin basic black button">Play</a>
-  </div>
-  <img id ="trashCan" src="img/trashCan.png" >
+<div id="game"></div>
+<div class="ui divider"></div>
+<div id="pageSection"></div>
 
-</div>
-<div id ="mobileControlLeft" ></div>
-<div id ="mobileControlRight"></div>
-</div>
 
-<div class="ui segment" style="display: none;" id="projectSection">
-  <div class="left ui rail">
-    <p></p>
-    <p></p>
-    <p></p>
-    <div class="ui sticky" style="width: 272px !important; height: 262.531px !important; left: 43px;">
-      <h3 class="ui header">Stuck Content</h3>
-      <img>
-    </div>
-  </div>
-  <p>HELO HERE ARE SOME PROJECTS</p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-</div>
-<div id="lost"class="ui basic modal">
-    <div class="ui  header">
-     <h1 class="header inverted thin " style="text-align:center;  color:white; margin:0px;">Awww you lost</h1>
- </div>
- <div style="text-align:center;">
-  <div class="ui red basic inverted button projects">
-    View Projects Normally
-</div>
-<div class="ui green basic game inverted button">
-    Play again
-</div>
-</div>
-</div>
-<div id="projects" style="display: none;" class="ui basic modal" >
-    <div class="ui horizontal divider inverted">
-      <h1 class = "thin">
-        Projects
-    </h1>
-</div>
-<div class="ui container">
-  <div id ="normalProjects" class="ui medium sequenced images">
-  </div>
-</div>
-
-<div style="text-align:center; width:100%;" >
+<div id ="footer" class="container basic segment ui">
+  <h5 class="ui  header center aligned">Made with<a class="ui red circular label">Love</a> by  <a href="http://www.lucolsthoorn.com">Luc Olsthoorn</a></h5>
   <div class="ui divider "></div>
-  <div class="ui green basic Back inverted button">
-    Back
+  <a href="https://soundcloud.com/olstenhousen">
+        <i class="ui  white soundcloud icon big"  id="soundCloudLink" ></i>
+    </a>
+    <a href="https://github.com/Luc-Olsthoorn">
+        <i  id="githubLink" class="ui  white github icon big"></i>
+    </a>
+    <a  href="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/export?format=pdf" >
+        <i  id="resumeLink" class="ui  white file text outline icon big"></i>
+    </a>
+    <a  href="https://www.linkedin.com/in/luc-olsthoorn-815074106">
+        <i  id="linkedinLink"class="ui  white linkedin icon big"></i>
+    </a>
+    <a href="mailto:me@lucolsthoorn.com?Subject=I%20want%20to%20hire%20you">
+        <i id="mailLink" class="ui  white mail outline icon big"></i>
+    </a>  
 </div>
-</div>
-</div>
-<div id="resume" style="display: none;" class="ui basic modal" >
-  <div class="ui embed container center" style="height:1000px; ">
-    <iframe style="border: 0" width="800" height="1200" frameborder="0" scrolling="no" src="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/pub?embedded=true"></iframe>
-</div>
-<div style="text-align:center; width:100%;" >
 
-  <a class="  ui thin inverted  game button" style="top:25%;">Play Again</a>
-  <a class="ui thin  inverted yellow button" href="https://docs.google.com/document/d/1gk2ZTqwowVei5fepCZEEoMToVgA6etjq4bZdtOKMRTk/export?format=pdf" >Download PDF</a>
-</div>
-</div>
 
 <!--JS -->
-<script src="js/game.js"></script>
+<script src="js/newGame.js"></script>
 <script src="js/semantic.js"></script>
 <script src="js/homePage.js"></script>
+<script src="js/parallax.js"></script>
+<script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  </script>
 </body>
 </html>

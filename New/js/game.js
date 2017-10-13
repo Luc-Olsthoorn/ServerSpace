@@ -55,30 +55,7 @@ function moveScenery(){
  
 //-------keyboard controls ----------//
   
-$(document).keydown(function(e) {
-    
-    switch(e.which) {
-        case 37: // up
-              up = true;
-        break;
-        case 39://down
-              down = true;
-        default: return; // exit this handler for other keys
-    }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
-});
 
-// keyup handler
-$(document).keyup(function(e){
-    switch(e.which) {
-        case 37: // up
-              up = false;
-        break;
-        case 39://down
-              down = false;
-        default: return; // exit this handler for other keys
-    }
-});
 //---------Mobile controls ---------//
 
 
