@@ -1,10 +1,12 @@
 var projects = [
-				{"name":"DataHub","googleDocURL":"https://docs.google.com/document/d/1kNGKrbwFrCANBu_oDjKUoaBlnUY75c-cFjEGSuCq950/pub?embedded=true", "importance":"5", "height":"600"},	
+	{"name":"Alacarte",'https://docs.google.com/presentation/d/e/2PACX-1vTAFgeJtYkR0gu-vDtPbShsvK7dOURB7mHndJMXXISdxDTGm2eG8bx6NAfVjx_jryV7-TuTGZwqOZ9s/embed?start=true&loop=false&delayms=3000" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"', "importance":"5", "height":"600"},	
+	
+				{"name":"DataHub","googleDocURL":"https://docs.google.com/document/d/1kNGKrbwFrCANBu_oDjKUoaBlnUY75c-cFjEGSuCq950/pub?embedded=true", "importance":"3", "height":"600"},	
 				{"name":"Auto-Email","googleDocURL":"https://docs.google.com/document/d/1YdpPPdBFeJNIP1fWZFcxhnntoK-1wXs2QejlCGs2dVk/pub?embedded=true", "importance":"5", "height":"400"},	
-				{"name":"TigerZone","googleDocURL":"https://docs.google.com/document/d/1t3RP6gxz_0c8DRpCYOw7T1a-HE30bvb1kK0mjKwcSwc/pub?embedded=true", "importance":"4", "height":"400"},	
+				{"name":"TigerZone","googleDocURL":"https://docs.google.com/document/d/1t3RP6gxz_0c8DRpCYOw7T1a-HE30bvb1kK0mjKwcSwc/pub?embedded=true", "importance":"2", "height":"400"},	
 				{"name":"Auto-Calendar", "googleDocURL":"https://docs.google.com/document/d/1VBz2G5E0zM8Ot_32PRQBzSsfuSt3yomRipAgRP9jNW4/pub?embedded=true", "importance":"3", "height":"400"},							
-				{"name":"UFACM","googleDocURL":"https://docs.google.com/document/d/1FYKEMG9mkMujYSkCJ4JSwmlqsZpqm5VDO-eGhfkVxIU/pub?embedded=true", "importance":"5", "height":"400"},
-				{"name":"EWEEK2016","googleDocURL":"https://docs.google.com/document/d/e/2PACX-1vQ8ZSQ7nWWiANX2Lda-7ZSZ5fOrIgZT7gGgf8kpn632hxWC_OJPvKv76kGdqczlfqYsCao0o0geU85F/pub?embedded=true", "importance":"3", "height":"400"},
+				{"name":"UFACM","googleDocURL":"https://docs.google.com/document/d/1FYKEMG9mkMujYSkCJ4JSwmlqsZpqm5VDO-eGhfkVxIU/pub?embedded=true", "importance":"4", "height":"400"},
+				{"name":"EWEEK2016","googleDocURL":"https://docs.google.com/document/d/e/2PACX-1vQ8ZSQ7nWWiANX2Lda-7ZSZ5fOrIgZT7gGgf8kpn632hxWC_OJPvKv76kGdqczlfqYsCao0o0geU85F/pub?embedded=true", "importance":"2", "height":"400"},
 				{"name":"Scribbl","googleDocURL":"https://docs.google.com/document/d/1V7SlU8FRpmXMQ31taKdur3dxgzb-Z6rNUoMsVvXoUqk/pub?embedded=true", "importance":"1", "height":"400"},
 				{"name":"NOM","googleDocURL":"https://docs.google.com/document/d/12AxHBhlSRTtx2EXgNdJHkkngU4lOEG0ZISCIN8TV3UY/pub?embedded=true", "importance":"1", "height":"400"}
 				];
